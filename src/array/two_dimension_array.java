@@ -20,6 +20,20 @@ public class two_dimension_array {
         //2：精简版
         int[][] arr3 = {{1,2},{3,4,5},{4,5,6,7}};
 
+        //调用遍历方法
+        ergodic(arr3);
 
+    }
+
+    /**
+     * 二位数组的遍历
+     * @param arr
+     */
+    public static void ergodic(int[][] arr){
+        for (int row = 0; row < arr.length; row++) {
+            for (int col = 0; col < arr[row].length; col++) {
+                System.out.println(arr[row][col]);
+            }
+        }
     }
 }
