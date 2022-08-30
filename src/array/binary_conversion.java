@@ -15,13 +15,13 @@ public class binary_conversion {
      * @return
      */
     public static String binary_conversion(int binary_pre, int binary_aft){
-        StringBuilder stringBuilder = new StringBuilder();
+        StringBuffer stringBuffer = new StringBuffer();
         while (binary_pre != 0) {
             int yushu = binary_pre % binary_aft;
             char c = digital.chs[yushu];
-            stringBuilder.insert(0,c);
+            stringBuffer.insert(0,c);
             binary_pre = binary_pre/binary_aft;
         }
-        return stringBuilder.toString();
+        return stringBuffer.toString();
     }
 }
